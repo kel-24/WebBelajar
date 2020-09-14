@@ -29,9 +29,26 @@
 
 .services .icon-main {
     text-align: center;
-    padding: 80px 20px;
-    transition: all ease-in-out 0.3s;
+    transition-property: all;
+    transition-duration: 2s;
+    transition: ease-in-out;
+    transition-delay: 4s;
     box-shadow: 1px 3px 14px rgba(0, 0, 0, 0.3);
+}
+
+.services .sd {
+    position: relative;
+    padding: 80px 20px;
+}
+
+.services .smp {
+    position: static;
+    padding: 80px 20px;
+}
+
+.services .sma {
+    position: static;
+    padding: 80px 20px;
 }
 
 .icon-main a {
@@ -47,8 +64,7 @@
     margin-bottom: 0;
 }
 
-.icon-main :hover {
+.services .icon-main :hover {
     background: #06b8ff;
     border-color: #03d9f5;
-    padding: 70px 20px 90px 20px;
 }
