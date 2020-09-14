@@ -7,7 +7,7 @@
     <title>
         Web Belajar
     </title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <div class="nav">
         <div>
             WEB BELAJAR
@@ -22,18 +22,27 @@
 </head>
 
 <body>
-    <form>
-        <h1>Login</h1>
-        <p>
-            Email :
-            <input type="text" name="username">
-        </p>
-        <p>
-            Password :
-            <input type="password" name="password">
-        </p>
-        <input type="submit" name="submit" value="Login">
-    </form>
+    <h1>WEB BELAJAR</h1>
+    <div class="kotak_login">
+        <p class="tulisan_login">Silahkan Login</p>
+        <form>
+            <h1>Login</h1>
+            <p>
+                <label>Username :</label>
+                <input type="text" name="username" class="form_login" placeholder="Username atau email">
+            </p>
+            <p>
+                <Label>Password :</Label>
+                <input type="text" name="password" class="form_login" placeholder="Password">
+            </p>
+            <input type="submit" class="form_login" value="Login">
+            <br />
+            <br />
+            <p>Blm punya akun ? Lupa Password</p>
+            <a href="./signin.html">Sign in</a>
+            <a href="./lupapassword.html">Lupa Password</a>
+        </form>
+    </div>
 </body>
 
 </html>
