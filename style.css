@@ -112,3 +112,23 @@ label {
     background: #06b8ff;
     border-color: #03d9f5;
 }
+.signup {
+    font-family: "Raleway", sans-serif;
+    font-size: 10pt;
+    margin-top: 16px;
+    text-align: left;
+    width: 350px;
+    background: white;
+    margin: 80px auto;
+    padding: 30px 20px;
+}
+.createdby {
+    font-family: "Georgia";
+    font-size: 10pt;
+    margin-top: 16px;
+    text-align: left;
+    width: 463px;
+    background: white;
+    margin: 80px auto;
+    padding: 30px 20px;
+}

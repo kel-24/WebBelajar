@@ -7,22 +7,62 @@
     <title>
         Web Belajar
     </title>
+          <!-- CSS Bootstrap -->
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+          <!-- Js Bootstrap-->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <div class="nav">
-        <div>
-            <marquee>WEB BELAJAR</marquee>
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
-        </ul>
-    </div>
-    </div>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand"><marquee>WEB BELAJAR</marquee> </a>
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i data-feather="home"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Materi
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="SD.html">
+                             SD
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            SMP
+                       </a>
+                       <a class="dropdown-item" href="#">
+                        SMA
+                   </a>
+                    </div>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                <i data-feather="search"></i>
+                Search
+                </button>
+            </form>
+        </div>
+    </nav>
+    <!--Feather icons-->
+    <script src="https://unpkg.com/feather-icons "></script>
+    <script>
+        feather.replace();
+    </script>
     <div class="kotak_login">
-        <p class="tulisan_login">Silahkan Masukan</p>
+        <p class="tulisan_login"><h5 style="text-align: center;">Silahkan Masukan</h5></p>
         <form>
             <p>
                 <label>Username :</label>
@@ -35,9 +75,9 @@
             <input type="submit" class="form_login" value="Sign in">
             <br />
             <br />
-            <p>Blm punya akun ? Lupa Password</p>
+            <p>Blm punya akun ? Lupa Password ?</p>
             <a href="signup.html">Sign Up</a>
-            <a href="lupapassword.html">Lupa Password</a>
+            <a href="lupapassword.html">| Lupa Password</a>
         </form>
     </div>
 </body>
