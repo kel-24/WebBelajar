@@ -33,49 +33,45 @@
             text-decoration: none;
         }
         
-        .tulisan_signup {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+        }
+        
+        .blog-footer {
+            padding: 2.5rem 0;
+            color: #999;
             text-align: center;
-            text-transform: uppercase;
+            background-color: #f9f9f9;
+            border-top: .05rem solid #e5e5e5;
         }
         
-        label {
-            font-size: 11pt;
+        .blog-footer p:last-child {
+            margin-bottom: 0;
         }
         
-        .kotak_signup {
-            width: 310px;
-            height: 500 px;
-            background: rgba(0, 0, 0, 0.650);
-            color: #fff;
-            margin: 50px auto;
-            padding: 50px 10px;
+        .blog-post {
+            margin-bottom: 4rem;
         }
         
-        label {
-            font-size: 11pt;
+        .blog-post-title {
+            margin-bottom: .25rem;
+            font-size: 2.5rem;
         }
         
-        .form_signup {
-            box-sizing: border-box;
-            width: 100%;
-            padding: 10px;
-            font-size: 11pt;
-            margin-bottom: 20px;
-        }
-        
-        .tombol_signup {
-            background: #46de4b;
-            color: white;
-            font-size: 11pt;
-            width: 100%;
-            border: none;
-            border-radius: 3px;
-            padding: 10px 20px;
+        .blog-post-meta {
+            margin-bottom: 1.25rem;
+            color: #999;
         }
     </style>
 </head>
 
 <body>
+    </div>
     <div class="container">
         <header class="blog-header py-3">
             <div class="row flex-nowrap justify-content-between align-items-center">
@@ -91,10 +87,9 @@
                             <img src="http://1.gravatar.com/avatar/47db31bd2e0b161008607d84c74305b5?s=96&d=mm&r=g">
                         </a>
                         <div class="dropdown-menu dropdown-menu-right rounded-0" aria-labelledby="messages">
-                            <a class="dropdown-item" href="C:\Users\asus\Documents\Web Progamming\Yang Baru\login.html">Login</a>
-                            <a class="dropdown-item" href="C:\Users\asus\Documents\Web Progamming\Yang Baru\signup.html">Sign Up</a>
+                            <a class="dropdown-item" href="Yang Baru\login.html">Login</a>
+                            <a class="dropdown-item" href="Yang Baru\signup.html">Sign Up</a>
                         </div>
-                        <!-- /.dropdown-menu -->
                     </div>
                 </div>
             </div>
@@ -111,11 +106,19 @@
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                    <i data-feather="search"></i>
-                    Search
-                    </button>
+                        <i data-feather="search"></i>
+                        Search
+                        </button>
                 </form>
             </nav>
+        </div>
+
+    </div>
+
+    <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+            <h1 class="display-4 font-italic">Selamat Datang Di Web Belajar</h1>
+            <p class="lead my-3">Web yang di peruntukkan pelajar dari semua kalangan yang didalamnya terdapat materi pembelajaran.</p>
         </div>
     </div>
 
@@ -124,40 +127,37 @@
     <script>
         feather.replace();
     </script>
-    <form>
-        <div class="kotak_signup">
-            <p class="tulisan_signup">
-                <img src="http://1.gravatar.com/avatar/47db31bd2e0b161008607d84c74305b5?s=96&d=mm&r=g">
-                <h2 class="text-center">SIGN UP</h2>
-            </p>
-            <form>
-                <p>
-                    <label>Email :</label>
-                    <input type="text" name="username" class="form_signup" placeholder="Email">
-                </p>
-                <p>
-                    <label>First Name :</label>
-                    <input type="text" name="firstname" class="form_signup" placeholder="First Name"> Last Name :
-                    <input type="text" name="lastname" class="form_signup" placeholder="Last Name">
-                </p>
-                <p>
-                    <label>Password :</label>
-                    <input type="password" name="password" class="form_signup" placeholder="Password"> Confirm Password :
-                    <input type="password" name="password" class="form_signup" placeholder="Confirm Password">
-                </p>
-                <p>
-                    <label>Tanggal Lahir :</label>
-                    <input type="date" id="demo">
-                    <br />
-                    <script type="text/javascript">
-                        function getValue() {
-                            alert(document.getElemenyById('demo').value);
-                        }
-                    </script>
-                </p>
-                <input type="submit" class="form_signup" value="Sign Up">
-            </form>
-        </div>
-</body>
 
-</html>
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+                <div class="blog-post ">
+                    <h2 class="blog-post-title border-bottom">Pengertian Web Belajar</h2>
+                    <p>Web belajar merupakan web yang di dalamnya terdapat materi-materi pembelajaran yang diperuntukan bagi siswa dan siswi yang masih berada dibangku sekolah SD,SMP, dan SMA.</p>
+
+                    <h3 class="blog-post-title  border-bottom">Tujuan Web Belajar</h3>
+                    <p>Agar para siswa dan siswi dapat lebih mengerti pelajaran yang diajarkan di sekolah yang bisa diakses kapan saja dan dimana saja dengan mudh.</p>
+
+                    <h3 class="blog-post-title border-bottom">Apa yang didapatkan didalam Web Belajar ?</h3>
+                    <p>Para siswa dan siswi mendapatkan pelajaran Matematika, IPA, IPS, Bahasa Indonesia, Pendidikan Kewarganegaraan, Bahasa Inggris, dan PLKJ.</p>
+                </div>
+            </div>
+            <aside class="col-md-4 blogg-sidebar">
+                <div class="p-3">
+                    <h4 class="font-italic">Created By </h4>
+                    <ol class="list-unstyled mb-0">
+                        <li><a> 535190051 - Jason Wirawan</a></li>
+                        <li><a> 535190059 - Steven Sanjaya</a></li>
+                        <li><a> 535190070 - Andry Winata</a></li>
+                        <li><a> 535190083 - Joshua Kristian</a></li>
+                        <li><a> 535190085 - Bimo Aryo Putra Pratama Baskoro</a></li>
+                    </ol>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer class="blog-footer">
+        <a href="#">Back to top</a>
+        </p>
+    </footer>
+</body>
