@@ -56,10 +56,10 @@ h1 {
     margin: 50px auto;
     padding: 50px 10px;
 }
+
 .admin{
     width: 95px;
     height: 95px;
-    barder-radius: 50%;
     position: absolute;
     top: 75px;
     Left: calc(50% - 45px);
