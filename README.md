@@ -11,3 +11,5 @@ Kelompok-24
 535190083 - Joshua Kristian 
 
 535190051 - Jason Wirawan
+
+LINK : https://web-belajar.netlify.app
