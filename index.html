@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="witdh=device-width, initial-scale-1.0">
     <title>Web Belajar</title>
-    <link rel="stylesheet" href="Yang Baru\css\style.css">
+    <link rel="stylesheet" href="#">
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Js Bootstrap-->
@@ -42,20 +42,6 @@
             font-family: "Playfair Display", Georgia, "Times New Roman", serif;
         }
         
-        .blog-post {
-            margin-bottom: 4rem;
-        }
-        
-        .blog-post-title {
-            margin-bottom: .25rem;
-            font-size: 2.5rem;
-        }
-        
-        .card-body:hover {
-            background: #DCDCDC;
-            border-color: black;
-        }
-        
         .blog-footer {
             padding: 2.5rem 0;
             color: #999;
@@ -67,6 +53,16 @@
         .blog-footer p:last-child {
             margin-bottom: 0;
         }
+        
+        .blog-post {
+            margin-bottom: 4rem;
+        }
+        
+        .blog-post-title {
+            margin-bottom: .25rem;
+            font-size: 2.5rem;
+        }
+        
     </style>
 </head>
 
@@ -76,7 +72,7 @@
         <header class="blog-header py-3">
             <div class="row flex-nowrap justify-content-between align-items-center">
                 <div class="col-4 pt-1">
-                    <a class="text-muted" href="../../index.html">Home</a>
+                    <a class="text-muted" href="index.html">Home</a>
                 </div>
                 <div class="col-4 text-center">
                     <a class="blog-header-logo text-dark">WEB BELAJAR</a>
@@ -87,8 +83,8 @@
                             <img src="http://1.gravatar.com/avatar/47db31bd2e0b161008607d84c74305b5?s=96&d=mm&r=g">
                         </a>
                         <div class="dropdown-menu dropdown-menu-right rounded-0" aria-labelledby="messages">
-                            <a class="dropdown-item" href="../../login.html">Login</a>
-                            <a class="dropdown-item" href="../../signup.html">Sign Up</a>
+                            <a class="dropdown-item" href="login.html">Login</a>
+                            <a class="dropdown-item" href="signup.html">Sign Up</a>
                         </div>
                     </div>
                 </div>
@@ -96,62 +92,65 @@
         </header>
         <div class="nav-scroller py-1 mb-2">
             <nav class="nav d-flex justify-content-between">
-                <a class="p-2 text-muted" href="../../mtk.html">Matematika</a>
-                <a class="p-2 text-muted" href="../../ipa.html">IPA</a>
-                <a class="p-2 text-muted" href="../../ips.html">IPS</a>
-                <a class="p-2 text-muted" href="../../b.indo.html">Bahasa Indonesia</a>
-                <a class="p-2 text-muted" href="../../pen.kewarganegaraan.html">Pendidikan Kewarganegaraan</a>
-                <a class="p-2 text-muted" href="../../b.inggris.html">Bahasa Inggris</a>
-                <a class="p-2 text-muted" href="../../plkj.html">PLKJ</a>
+                <a class="p-2 text-muted" href="mtk.html">Matematika</a>
+                <a class="p-2 text-muted" href="ipa.html">IPA</a>
+                <a class="p-2 text-muted" href="ips.html">IPS</a>
+                <a class="p-2 text-muted" href="b.indo.html">Bahasa Indonesia</a>
+                <a class="p-2 text-muted" href="pen.kewarganegaraan.html">Pendidikan Kewarganegaraan</a>
+                <a class="p-2 text-muted" href="b.inggris.html">Bahasa Inggris</a>
+                <a class="p-2 text-muted" href="plkj.html">PLKJ</a>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-                    <i data-feather="search"></i>
-                    Search
-                    </button>
+                        <i data-feather="search"></i>
+                        Search
+                        </button>
                 </form>
             </nav>
         </div>
+
     </div>
+
+    <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-4 px-0">
+            <h1 class="display-4 font-italic">Selamat Datang Di Web Belajar</h1>
+            <p class="lead my-3">Web yang di peruntukkan pelajar dari semua kalangan yang didalamnya terdapat materi pembelajaran.</p>
+        </div>
+    </div>
+
     <!-- /.right-links -->
     <script src="https://unpkg.com/feather-icons "></script>
     <script>
         feather.replace();
     </script>
-    <main role="main">
-        <section class="jumbotron text-center">
-            <div class="container">
-                <h1 class="jumbotron-heading">IPS</h1>
-                <p class="lead text-muted">Sekolah Menengah Atas <br/> Kelas 12</p>
-            </div>
-        </section>
-        <div class="text-center">
-            <div class="blog-post">
-                <h2 class="blog-post-title border-bottom">Sejarah Supersemar</h2>
-            </div>
 
-            <div class="row">
-                <div class="col-md-8 blog-main text-left">
-                    <div class="blog-post ">
-                        <h2 class="blog-post-title border-bottom">Sejarah Supersemar</h2>
-                        <p> Sejarah Supersemar </br>
-                            Di bulan Januari, terjadi dua pergolakan rakyat.
+    <main role="main" class="container">
+        <div class="row">
+            <div class="col-md-8 blog-main">
+                <div class="blog-post ">
+                    <h2 class="blog-post-title border-bottom">Pengertian Web Belajar</h2>
+                    <p>Web belajar merupakan web yang di dalamnya terdapat materi-materi pembelajaran yang diperuntukan bagi siswa dan siswi yang masih berada dibangku sekolah SD,SMP, dan SMA.</p>
 
-                            Aksi pertama berlangsung pada 10 Januari 1966. Dipimpin Kesatuan Aksi Mahasiswa Indonesia (KAMI), mereka menyampaikan Tiga Tuntutan Rakyat (Tritura). Adapun poin-poin yang diminta: 1) membubarkan PKI beserta ormasnya, 2) merombak kabinet Dwikora, dan 3) Turunkan harga (perekonomian)
-                            
-                            Dua hari berselang, Front Pancasila mendatangi DPR-GR (Dewan Perwakilan Rakyat Gotong Royong, yang dibentuk Soekarno untuk menggantikan DPR hasil pemilu 1955). Aksi lanjutan digelar. Presiden Soekarno mencoba menyetujui perubahan kabinet Dwikora. Meski begitu, kabinet baru ini masih dianggap tidak efisien di mata rakyat.   </div>
+                    <h3 class="blog-post-title  border-bottom">Tujuan Web Belajar</h3>
+                    <p>Agar para siswa dan siswi dapat lebih mengerti pelajaran yang diajarkan di sekolah yang bisa diakses kapan saja dan dimana saja dengan mudh.</p>
 
+                    <h3 class="blog-post-title border-bottom">Apa yang didapatkan didalam Web Belajar ?</h3>
+                    <p>Para siswa dan siswi mendapatkan pelajaran Matematika, IPA, IPS, Bahasa Indonesia, Pendidikan Kewarganegaraan, Bahasa Inggris, dan PLKJ.</p>
                 </div>
-                <aside class="col-md-4 blogg-sidebar">
-                    <div class="p-3 text-left">
-                        <h4 class="font-italic">Materi</h4>
-                        <ol class="list-unstyled mb-0">
-                            <li><a href="#">Konflik Ethiopia dan Eritrea di Afrika</a></li>
-                            <li><a href="materi_12_IPS_SSupersemar.html"> Sejarah Supersemar</a></li>
-                        </ol>
-                    </div>
-                </aside>
             </div>
+            <aside class="col-md-4 blogg-sidebar">
+                <div class="p-3">
+                    <h4 class="font-italic">Created By </h4>
+                    <ol class="list-unstyled mb-0">
+                        <li><a> 535190051 - Jason Wirawan</a></li>
+                        <li><a> 535190059 - Steven Sanjaya</a></li>
+                        <li><a> 535190070 - Andry Winata</a></li>
+                        <li><a> 535190083 - Joshua Kristian</a></li>
+                        <li><a> 535190085 - Bimo Aryo Putra Pratama Baskoro</a></li>
+                    </ol>
+                </div>
+            </aside>
+        </div>
     </main>
     <footer class="blog-footer">
         <a href="#">Back to top</a>
