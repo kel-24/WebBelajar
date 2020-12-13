@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="witdh=device-width, initial-scale-1.0">
     <title>Web Belajar</title>
-    <link rel="stylesheet" href="Yang Baru\css\style.css">
+    <link rel="stylesheet" href="#">
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Js Bootstrap-->
@@ -15,9 +16,61 @@
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
 
     <style>
-        img {
+        .img {
             border-radius: 50%;
             height: 40px;
+        }
+        
+        .gbr {
+            width: 220px;
+            height: 260px;
+            position: absolute;
+            top: 0px;
+            Left: 1050px;
+        }
+        
+        .gbr1 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            Left: 150px;
+        }
+        
+        .gbr2 {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            Left: 610px;
+        }
+        
+        .gbr3 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 20px;
+            Left: 1050px;
+        }
+        
+        .gbr11 {
+            position: absolute;
+            top: 120px;
+            Left: 137px;
+        }
+        
+        .gbr21 {
+            position: absolute;
+            top: 120px;
+            Left: 597px;
+        }
+        
+        .gbr31 {
+            position: absolute;
+            top: 120px;
+            Left: 1035px;
         }
         
         .blog-header {
@@ -34,40 +87,34 @@
             text-decoration: none;
         }
         
-        .tulisan_login {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+        }
+        
+        .blog-footer {
+            padding: 2.5rem 0;
+            color: #999;
             text-align: center;
-            text-transform: uppercase;
+            background-color: #f9f9f9;
+            border-top: .05rem solid #e5e5e5;
         }
         
-        .kotak_login {
-            width: 310px;
-            height: 280px;
-            background: rgba(0, 0, 0, 0.650);
-            color: #fff;
-            margin: 50px auto;
-            padding: 50px 10px;
+        .blog-footer p:last-child {
+            margin-bottom: 0;
         }
         
-        label {
-            font-size: 11pt;
+        .blog-post {
+            margin-bottom: 4rem;
         }
         
-        .form_login {
-            box-sizing: border-box;
-            width: 100%;
-            padding: 5px;
-            font-size: 11pt;
-            margin-bottom: 20px;
-        }
-        
-        .tombol_login {
-            background: #46de4b;
-            color: white;
-            font-size: 11pt;
-            width: 100%;
-            border: none;
-            border-radius: 3px;
-            padding: 10px 20px;
+        .blog-post-title {
+            margin-bottom: .25rem;
+            font-size: 2.5rem;
         }
     </style>
 </head>
@@ -93,26 +140,38 @@
 
     <div class="page-content">
         <div class="form-v8-content">
+            <div class="form-left">
+                <img src="C:\Users\asus\Documents\Web Progamming\Web Belajar\book3.jpeg" alt="form">
+            </div>
             <div class="form-right">
-                <h1 class="form-title text-center">Silahkan Masukkan Email Anda </h1>
+                <h1 class="form-title text-center">Login </h1>
                 </br>
                 <form class="form-detail" action="#" method="post">
-                    <div class="tabcontent" id="forgot-pass">
+                    <div class="tabcontent" id="Login">
                         <div class="form-row">
                             <label class="form-row-inner">
 								<input type="text" name="your_email_1" id="your_email_1" class="input-text" placeholder="Email" required>
 		  						<span class="border"></span>
 							</label>
                         </div>
+                        <div class="form-row">
+                            <label class="form-row-inner">
+								<input type="password" name="password_1" id="password_1" class="input-text" placeholder="Password" required>
+								<span class="border"></span>
+							</label>
+                        </div>
+                        <div class="forgot-pass">
+                            <a href="C:\Users\asus\Documents\Web Progamming\Web Belajar\lupapassword.html">Lupa Password ?</a>
+                        </div>
                         <div class="form-row-last">
                             <button class="tombol_login">
-                                <a href="C:\Users\asus\Documents\Web Progamming\Web Belajar\halamandepan2.html" >Confirm</a>
-                            </button>
+                                <a href="C:\Users\asus\Documents\Web Progamming\Web Belajar\index.html" >Login</a>
+                                </button>
                         </div>
+                        Belum punya Akun ?<a href="C:\Users\asus\Documents\Web Progamming\Web Belajar\halamandepan.html">Register</a>
                     </div>
-                </form>
             </div>
-
+            </form>
         </div>
     </div>
     <!-- /.right-links -->
