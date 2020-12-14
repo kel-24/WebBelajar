@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+   
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="witdh=device-width, initial-scale-1.0">
     <title>Web Belajar</title>
@@ -146,46 +153,93 @@
             <div class="form-right">
                 <h1 class="form-title text-center">Sign Up </h1>
                 </br>
-                <form class="form-detail" action="#" method="post">
+                <form class="form-detail">
                     <div class="tabcontent" id="sign-up">
                         <div class="form-row">
                             <label class="form-row-inner">
-                            <input type="text" name="full_name" id="full_name" class="input-text" placeholder="Username" required>
+                            <input type="text" name="full_name" id="full_name" class="input-text" placeholder="Username">
                             <span class="border"></span>
                             </label>
                         </div>
                         <div class="form-row">
                             <label class="form-row-inner">
-								<input type="text" name="your_email" id="your_email" class="input-text" placeholder="Email" required>
+								<input type="text" name="your_email" id="your_email" class="input-text" placeholder="Email">
 		  						<span class="border"></span>
 							</label>
                         </div>
                         <div class="form-row">
                             <label class="form-row-inner">
-								<input type="password" name="password" id="password" class="input-text" placeholder="Password" required>
+								<input type="password" name="password" id="password" class="input-text" placeholder="Password">
 								<span class="border"></span>
 							</label>
                         </div>
                         <div class="form-row">
                             <label class="form-row-inner">
-								<input type="password" name="confirm_password" id="confirm_password" class="input-text" placeholder="Confirm Password"required>
+								<input type="password" name="confirm_password" id="confirm_password" class="input-text" placeholder="Confirm Password">
 								<span class="border"></span>
 							</label>
                         </div>
                         <div class="form-row-last">
-                            <button class="tombol_login">
-                            <a href="C:\Users\asus\Documents\Web Progamming\Web Belajar\halamandepan2.html" >Register</a>
-                            </button>
+                            <input class="tombol_login" Value="Register" type="button" onclick="signup()">
+                           
                         </div>
-                        Sudah punya Akun ?<a href="C:\Users\asus\Documents\Web Progamming\Web Belajar\halamandepan2.html">Login</a>
+                        Sudah punya Akun ?<a href="login.html">Login</a>
                     </div>
             </div>
             </form>
         </div>
     </div>
     <!-- /.right-links -->
+    
     <script src="https://unpkg.com/feather-icons "></script>
     <script>
+    var firebaseConfig = {
+    apiKey: "AIzaSyClo6XocNDn9tpL6PyohfeAdhwyuDJiz_8",
+    authDomain: "web-belajar-198e7.firebaseapp.com",
+    projectId: "web-belajar-198e7",
+    storageBucket: "web-belajar-198e7.appspot.com",
+    messagingSenderId: "761386960561",
+    appId: "1:761386960561:web:7d404be7356724a8fe8490",
+    measurementId: "G-H1JSL1XVR0"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const db = firebase.firestore();
+
+        async function signup(){
+        let data = await db.collection("user").get();
+        data.forEach(element => {
+            console.log(element.data())
+        });
+        let username = document.getElementById("full_name").value;
+        let email = document.getElementById("your_email").value;
+        let password = document.getElementById("password").value;
+        let confirm_password = document.getElementById("confirm_password").value;
+        if(username.length > 8 && email.length > 8 && password.length > 8){
+            if(password == confirm_password){
+            let data = await db.collection("user").add(
+                {
+                    username : username,
+                    email : email,
+                    password : password
+                }
+            )
+            console.log(data)
+            }
+            else 
+            {
+                alert("The password didn't match")
+            }
+        }
+        else 
+        {
+            alert(
+                "Wrong Information"
+            )
+        }
+            
+    }
         feather.replace();
     </script>
 </body>
