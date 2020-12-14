@@ -98,7 +98,7 @@
                             <img src="http://1.gravatar.com/avatar/47db31bd2e0b161008607d84c74305b5?s=96&d=mm&r=g">
                         </a>
                         <div class="dropdown-menu dropdown-menu-right rounded-0" aria-labelledby="messages">
-                            <a class="dropdown-item" href="login.html">Logout</a>
+                            <a class="dropdown-item" onclick="logout()">Logout</a>
                         </div>
                     </div>
                 </div>
@@ -226,6 +226,10 @@
   firebase.analytics();
   const db = firebase.firestore();
         feather.replace();
+        function logout(){
+        UpdateCookies("userinfo", null);
+        window.location ="login.html"
+     }
     </script>
 
     <footer class="blog-footer">
