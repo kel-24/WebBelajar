@@ -241,7 +241,7 @@
    firebase.analytics();
    const db = firebase.firestore();
    let user = GetCookies().userinfo;
-   if(user.username == undefined ){
+   if(user == undefined ){
        window.location = "login.html"
    }
    console.log(user)
