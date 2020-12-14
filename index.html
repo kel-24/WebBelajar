@@ -241,6 +241,9 @@
    firebase.analytics();
    const db = firebase.firestore();
    let user = GetCookies().userinfo;
+   if(user.username == undefined ){
+       window.location = "login.html"
+   }
    console.log(user)
    document.getElementById("username").innerText=user.username
      feather.replace();
