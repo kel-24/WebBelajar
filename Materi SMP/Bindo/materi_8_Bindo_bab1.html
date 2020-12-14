@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-analytics.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="witdh=device-width, initial-scale-1.0">
     <title>Web Belajar</title>
@@ -118,11 +121,7 @@
             </nav>
         </div>
     </div>
-    <!-- /.right-links -->
-    <script src="https://unpkg.com/feather-icons "></script>
-    <script>
-        feather.replace();
-    </script>
+    
     <main role="main">
         <section class="jumbotron text-center">
             <div class="container">
@@ -169,3 +168,23 @@
         </p>
     </footer>
 </body>
+
+<!-- /.right-links -->
+<script src="https://unpkg.com/feather-icons "></script>
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyClo6XocNDn9tpL6PyohfeAdhwyuDJiz_8",
+        authDomain: "web-belajar-198e7.firebaseapp.com",
+        projectId: "web-belajar-198e7",
+        storageBucket: "web-belajar-198e7.appspot.com",
+        messagingSenderId: "761386960561",
+        appId: "1:761386960561:web:7d404be7356724a8fe8490",
+        measurementId: "G-H1JSL1XVR0"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      const db = firebase.firestore();
+    feather.replace();
+</script>
+</html>
