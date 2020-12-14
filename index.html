@@ -242,7 +242,7 @@
    const db = firebase.firestore();
    let user = GetCookies().userinfo;
    console.log(user)
-   document.getElementById("username").value=user.username
+   document.getElementById("username").innerText=user.username
      feather.replace();
  </script>
  </html>
