@@ -239,7 +239,7 @@
    firebase.initializeApp(firebaseConfig);
    firebase.analytics();
    const db = firebase.firestore();
-   let username = GetCookies();
+   let username = GetCookies().userinfo;
    console.log(username);
      feather.replace();
  </script>
