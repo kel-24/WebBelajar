@@ -169,7 +169,7 @@
                         </div>
                         <div class="form-row">
                             <label class="form-row-inner">
-								<input type="password" name="password" id="password" class="input-text" placeholder="Password">
+								<input type="password" name="password" id="password" class="input-text" placeholder="minimal 6 digit">
 								<span class="border"></span>
 							</label>
                         </div>
@@ -209,35 +209,39 @@
 
         async function signup(){
         let data = await db.collection("user").get();
-        data.forEach(element => {
-            console.log(element.data())
-        });
         let username = document.getElementById("full_name").value;
         let email = document.getElementById("your_email").value;
         let password = document.getElementById("password").value;
         let confirm_password = document.getElementById("confirm_password").value;
-        if(username.length > 8 && email.length > 8 && password.length > 8){
-            if(password == confirm_password){
+        if(username.length >= 6 && email.length >= 6 && password.length >= 6)
+        {
+            if(password == confirm_password)
+            {
             let data = await db.collection("user").add(
                 {
                     username : username,
                     email : email,
                     password : password
-                }
-                
+                }   
             )
             window.location = "login.html"
             }
-            else 
+            else if (password.length <= 5)
             {
-                alert("The password didn't match")
+                alert("Password Minimal 6 Digit")
+
             }
+            else{
+                    alert("Password Tidak sama")
+                }
+            window.location ="signup.html"
         }
         else 
         {
             alert(
-                "Wrong Information"
+                "Informasi Salah"
             )
+            window.location ="signup.html"
         }
             
     }
